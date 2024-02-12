@@ -1,5 +1,6 @@
 import 'package:alarm/alarm.dart';
 import 'package:flutter/material.dart';
+import 'package:simple_ripple_animation/simple_ripple_animation.dart';
 
 class ExampleAlarmRingScreen extends StatelessWidget {
   final AlarmSettings alarmSettings;
@@ -18,7 +19,16 @@ class ExampleAlarmRingScreen extends StatelessWidget {
               "You alarm is ringing...",
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            const Text("🔔", style: TextStyle(fontSize: 50)),
+            const RippleAnimation(
+              color: Colors.black,
+              delay: Duration(milliseconds: 300),
+              repeat: true,
+              minRadius: 75,
+              ripplesCount: 6,
+              duration: Duration(milliseconds: 6 * 300),
+              child: Text("🔔", style: TextStyle(fontSize: 50)),
+            ),
+            // const Text("🔔", style: TextStyle(fontSize: 50)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

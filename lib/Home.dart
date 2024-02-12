@@ -3,8 +3,6 @@ import 'dart:async';
 import 'package:alarm/alarm.dart';
 import 'package:cod_soft_alarm/Edit_page.dart';
 import 'package:cod_soft_alarm/ring.dart';
-// import 'package:codsoft_alarm/screens/edit_alarm.dart';
-// import 'package:codsoft_alarm/screens/ring.dart';
 
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
